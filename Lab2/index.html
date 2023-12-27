@@ -11,33 +11,64 @@
             width: 100%;
         }
 
-        th, td {
+        td {
             border: 1px solid black;
             padding: 8px;
             text-align: center;
+            height: 50px;
+            font-weight: bold;
         }
+
+        
+        tr:first-child {
+            background-color: #298f8f; 
+            color: #000000; 
+
+            &:hover{
+            background-color: #D97373; 
+            color: #04112C; 
+            }
+        }
+
+        tr:nth-child(2) {
+            background-color: #f5f529; 
+            color: #04112C; 
+
+            &:hover{
+            background-color: #0D17D9; 
+            color: #ffffff; 
+            }
+        }
+
+        
+        table {
+            color: #ffffff; 
+        }
+
+        
+        
     </style>
-    <title>3x8 Table</title>
+    
 </head>
 <body>
     <table>
         
         <tbody>
             <tr>
-                <td>Row 1, Col 1</td>
-                <td>Row 1, Col 2</td>
-                <td colspan="2" rowspan="2">Row 1, Col 3</td>
-                <td colspan="2">Row 1, Col 5</td>
-                <td colspan="2" rowspan="2">Row 1, Col 7</td>
+                <td>Лясковський</td>
+                <td>Олексій</td>
+                <td colspan="2" rowspan="2">Владиславович</td>
+                <td colspan="2"></td>
+                <td colspan="2" rowspan="2"></td>
             </tr>
             <tr>
-                <td colspan="2">Row 2, Col 1</td>
-                <td colspan="2">Row 2, Col 5</td>
+                <td colspan="2">ІК-13</td>
+                <td colspan="2">ЛР-2 Варіант-29</td>
 
             </tr>
             <tr>
-                <td colspan="2">Row 3, Col 1</td>
-                <td colspan="6">Row 3, Col 3</td>
+                <td colspan="2"></td>
+                <td colspan="6"></td>
 
             </tr>
         </tbody>
