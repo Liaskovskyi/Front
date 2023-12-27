@@ -1,8 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
     generateColorTable();
 
     updateSelectedColor();
-});
 
 function generateColorTable() {
     var table = document.getElementById("colorTable");
