@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лясковський Олексій Владиславович ІК-13 Лабораторна-5 Варіант-29</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form </h1>
+
+        <form class="input-form" id="input-form">
+            <div class="form-group">
+                <label for="fullName">ПІБ:</label>
+                <input type="text" id="fullName" name="fullName" pattern="[A-Za-z]+ [A-Za-z]\.[A-Za-z]." required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phoneNumber">Номер телефону:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="\(\d{3}\)-\d{3}-\d{2}-\d{2}" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="idCard">ID-картка:</label>
+                <input type="text" id="idCard" name="idCard" pattern="[A-Za-z]{2} №\d{6}" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="birthDate">Дата народження:</label>
+                <input type="text" id="birthDate" name="birthDate" pattern="\d{2}\.\d{2}\.\d{4}" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+
+        <div id="displayData"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
